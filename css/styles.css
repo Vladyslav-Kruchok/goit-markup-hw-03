@@ -1,0 +1,196 @@
+/* ---------- global variable ---------- */
+:root{
+    --first-color-white: #ffffff;
+    --second-color-different-black: #212121;
+    --third-color-different-grey: #757575;
+    --fourth-color: #2F303A;
+    --fifth-color: rgba(255, 255, 255, 0.6);
+    --sixth-color: #F5F4FA;
+    --logo-color-white: #ffffff;
+    --logo-color-black: #000000;
+    --logo-color-light-blue: #2196F3;
+    --active: #188CE8;
+    --add-order-color: #2196F3;
+    --first-font: 'Roboto', sans-serif; 
+    --second-font: 'Raleway', sans-serif;
+}
+/* ---------- common syle ---------- */
+body{
+    font-family: var(--first-font);
+    font-style: normal;
+    color: var(--first-color-white);
+    background: var(--main-bg);
+    letter-spacing: 0.03em;
+}
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.no-mark{
+    list-style: none;
+}
+.no-undeline{
+    text-decoration: none;
+}
+
+.header-item-text.current-page,
+.active-link:hover,
+.active-link:focus{
+    color: var(--active);
+}
+.btn{
+    cursor: pointer;
+}
+.active-btn:hover,
+.active-btn:focus{
+    background: var(--active);
+    color: var(--first-color-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: hidden; 
+}
+.card-title{
+    color: var(--second-color-different-black);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(19 / 16);
+    text-align: center;
+}
+.card-text{
+    color: var(--third-color-different-grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(19 / 16);
+}
+.card-text-center{
+    text-align: center;
+}
+
+/* ---------- header ---------- */
+.header-logo-txt,
+.footer-logo-txt{
+    color: var(--logo-color-light-blue);
+    font-family: var(--second-font);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+}
+.header-logo-txt span{
+    color: var(--second-color-different-black);
+}
+.header-item-text-light{
+    color: var(--third-color-different-grey);
+}
+.header-item-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--second-color-different-black);
+}
+
+/* ---------- main ---------- */
+/* ---------- main-index ---------- */
+/* section web-stud-main-content */
+.content{
+    background: var(--fourth-color);
+    text-align: center;
+}
+.content-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.content-btn{
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    text-align: center;
+    color: var(--first-color-white);
+    background-color: var(--add-order-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: hidden;
+}
+/* section web-stud-main-content-peculiarity */
+.peculiarity-li-title{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--second-color-different-black);
+    text-transform: uppercase;
+}
+.peculiarity-li-text{
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--third-color-different-grey);
+}
+/* web-stud-main-content-what-to-do */
+/* web-stud-main-content-teams */
+.teams-title,
+.what-to-do-title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    color: var(--second-color-different-black);
+    text-align: center;
+}
+.card-team-info{
+    text-align: center;
+}
+/* *** main-porfolio *** */
+.portfolio-filters-btn{
+    background: var(--sixth-color);
+    border-radius: 4px;
+    border: hidden;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color-different-black);
+
+}
+.portfolio-card-title{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36px / 18);
+    letter-spacing: 0.06em;
+    color: var(--second-color-different-black);
+}
+.portfolio-card-text{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: var(--third-color-different-grey);
+}
+
+/* *** footer *** */
+.footer{
+    background: var(--fourth-color);
+}
+.footer-logo-txt span{
+    color: var(--first-color-white);
+}
+.footer-contacts{
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
+.footer-address{
+    color: var(--first-color-white);
+    font-style: normal;
+}
+.footer-email-tel{
+    color: var(--fifth-color);
+    font-style: normal;
+}
