@@ -15,12 +15,33 @@
     --second-font: 'Raleway', sans-serif;
 }
 /* ---------- common syle ---------- */
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body{
     font-family: var(--first-font);
     font-style: normal;
     color: var(--first-color-white);
     background: var(--main-bg);
     letter-spacing: 0.03em;
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section{
+    padding: 94px 0;
 }
 .visually-hidden{
     position: absolute;
@@ -71,6 +92,14 @@ body{
 }
 
 /* ---------- header ---------- */
+/* ---------- header-logo-txt ---------- */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 .header-logo-txt,
 .footer-logo-txt{
     color: var(--logo-color-light-blue);
@@ -85,6 +114,25 @@ body{
 .header-item-text-light{
     color: var(--third-color-different-grey);
 }
+.header-logo-pos{
+    padding-right: 93px;
+}
+.header-box{
+    display: flex;
+    align-items:inherit;
+}
+/* ---------- menu ---------- */
+.nav-list{
+    display: flex;
+}
+.nav-item:not(:last-child){
+    padding-right: 50px;
+}
+/* ---------- contacts ---------- */
+.header-contacts{
+    display: flex;
+}
+
 .header-item-text{
     font-weight: 500;
     font-size: 14px;
@@ -100,12 +148,18 @@ body{
     background: var(--fourth-color);
     text-align: center;
 }
+.content-box{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 696px;
+}
 .content-title{
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .content-btn{
     font-family: inherit;
@@ -120,6 +174,19 @@ body{
     border: hidden;
 }
 /* section web-stud-main-content-peculiarity */
+.peculiarity-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+}
+.peculiarity-item{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 0;
+    flex-basis: calc((100% - 120px) / 4);
+}
 .peculiarity-li-title{
     font-weight: 900;
     font-size: 14px;
@@ -141,6 +208,32 @@ body{
     line-height: calc(42 / 36);
     color: var(--second-color-different-black);
     text-align: center;
+}
+.what-to-do-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+}
+.what-to-do-item{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 0;
+    flex-basis: calc((100% - 90px) / 3);
+}
+.teams-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+}
+.teams-item{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 0;
+    flex-basis: calc((100% - 120px) / 4);
 }
 .card-team-info{
     text-align: center;
@@ -178,6 +271,12 @@ body{
 /* *** footer *** */
 .footer{
     background: var(--fourth-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-logo-txt{
+    display: block;
+    margin-bottom: 20px;
 }
 .footer-logo-txt span{
     color: var(--first-color-white);
