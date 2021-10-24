@@ -15,6 +15,7 @@
     --second-font: 'Raleway', sans-serif;
 }
 /* ---------- common syle ---------- */
+/* ---------- teg ---------- */
 h1,
 h2,
 h3,
@@ -40,6 +41,10 @@ img{
     max-width: 100%;
     height: auto;
 }
+header{
+    border-bottom: 1px solid #ECECEC;
+}
+/* ---------- class ---------- */
 .container{
     width: 1200px;
     margin-left: auto;
@@ -106,7 +111,6 @@ img{
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;;
 }
 .header-logo-txt,
 .footer-logo-txt{
@@ -246,8 +250,8 @@ img{
 }
 .card-team-info{
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* *** main-porfolio *** */
@@ -263,13 +267,12 @@ img{
     vertical-align: middle;
     letter-spacing: 0.03em;
     color: var(--second-color-different-black);
-    margin-bottom: 16px;
     padding: 6px 22px;
 }
 .portfolio-filters-ul{
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .portfolio-filters-li:not(:last-child){
     margin-right: 8px;
@@ -289,7 +292,10 @@ img{
     flex-basis: calc((100% - 90px) / 3);
 }
 .portfolio-item-box{
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 .portfolio-card-title{
     font-family: inherit;
